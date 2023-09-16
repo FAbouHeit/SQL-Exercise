@@ -43,3 +43,21 @@ SELECT id,name, age, gender, points FROM students WHERE ID = 4
 UPDATE graduates SET Graduation = '08/09/2018' WHERE id = 4
 
 DELETE FROM students WHERE id =4
+
+# //////////////////////////////////////////////////////////////////////
+
+SELECT e.Name, e.Company,c.date FROM  employees e
+left JOIN companies c
+on e.Company = c.name
+
+
+SELECT e.Name, c.date FROM  employees e
+left JOIN companies c
+on e.Company = c.name
+WHERE c.date <2000
+
+
+select Company from employees WHERE Role='Graphic Designer'
+
+
+
