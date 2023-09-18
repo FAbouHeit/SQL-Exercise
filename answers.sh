@@ -61,3 +61,22 @@ select Company from employees WHERE Role='Graphic Designer'
 
 
 
+# /////////////////////////////////////////////////////////////////////
+
+
+SELECT name FROM students WHERE 
+Points=(
+SELECT max(Points) FROM students
+)
+
+SELECT avg(Points)
+FROM students
+
+SELECT name FROM students
+WHERE Points = (500)
+
+SELECT name FROM students
+WHERE name like '%s%'
+
+select name, Points FROM students
+ORDER by Points DESC
